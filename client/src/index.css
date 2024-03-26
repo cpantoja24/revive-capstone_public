@@ -1,0 +1,416 @@
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+  padding-left: 5px;
+  padding-right: 5px;
+} */
+/* a:hover {
+  color: #535bf2;
+} */
+
+/* body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+} */
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+/* button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+} */
+/* button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+.singlePageImg {
+  width: 400px;
+}
+
+@media screen and (max-width: 400px) {
+  .singlePageImg {
+    width: 100%;
+  }
+}
+
+/* .singleBackground {
+  background-image:url('./assets/images/download.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  width: 600px;
+  content: "width=device-width, initial-scale=1";
+} */
+
+.favoritesCard {
+  /* border-style: double; */
+  border-width: thick;
+  display: inline-flex;
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.favorite-card {
+  border-style: solid;
+  /* display: inline-flex; */
+  padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 10px;
+  width: 30vw;
+  margin-top: 20px;
+}
+
+.selfCareChecklist {
+  margin-top: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  min-width: 400px;
+}
+
+.checklistBody {
+  /* border:solid; */
+  margin: 0 auto;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.checklistTable{
+  border:solid;
+  margin: 0 auto;
+  width: 500px;
+  font-size: 20px;
+}
+
+.checklistInput {
+  margin-bottom: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.recipeImage{
+  height:auto;
+  width: 200px;
+}
+
+.breakLine {
+  width: 200px;
+  border-bottom: solid;
+  margin: 0 auto;
+}
+.longBreakLine {
+  width: 500px;
+  border-bottom: solid;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+  .longBreakLine {
+    width: 100%;
+  }
+}
+
+.shortBreakLine {
+  width: 100px;
+  border-bottom: solid;
+  margin: 0 auto;
+}
+
+.accountDetails{
+  font-size: 22px;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 20px;
+}
+
+.calendar-card{
+  text-align: center;
+  width: 750px;
+  margin: 0 auto;
+}
+
+.addAppointmentButton {
+  width: 150px;
+  margin: 0 auto;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.modalButton {
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.modal {
+  display: flex;
+  width: 400px;
+  justify-content: center; 
+  border: solid;
+  height: 300px;
+  position: fixed;
+}
+
+.appointmentInput {
+  width: 250px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
+
+.modal, .overlay {
+  width: 400px;
+  height: 300px;
+  top: 30vh;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  margin: 0 auto;
+}
+
+.dayNames {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 750px;
+  text-align: center;
+}
+
+.calendar-day {
+  border: solid;
+  height: 75px;
+  text-align: right;
+  background: white;
+}
+
+.calendar-day:hover{
+  border-color: #bcdef7;
+  border-width: thick;
+}
+
+.greenCalendarSquare{
+  background-color:#e1f5df;
+  height: 75px;
+  text-align: right;
+  border: none;
+}
+
+.greenCalendarSquare:hover{
+  border:solid;
+  border-color: #bcdef7;
+  border-width: thick;
+}
+
+@media (prefers-color-scheme: dark) {
+  .calendar-day {
+    border: solid;
+    border-color: black;
+    color: black;
+  }
+  :root {
+    background-color: #ffffff;
+  }
+}
+
+/* .scheduleBlock{
+  border: solid;
+  width: 400px;
+  margin: 0 auto; 
+  margin-bottom: 10px;
+  padding-top: 10px;
+ 
+} */
+
+.removeAppointmentButton {
+  border: solid;
+  border-color: pink;
+  width: 150px;
+}
+
+.calendarHeading {
+  font-size: 18px;
+}
+
+.favoriteName {
+  /* font-weight: bold; */
+  font-size: 18px;
+}
+
+.mainPhoto{
+  width: 900px;
+}
+
+
+.accountPhoto{
+  width: fit-content;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 600px;
+}
+@media screen and (max-width: 500px) {
+  .accountPhoto {
+    width: 100%;
+  }
+  .mainPhoto{
+    width: 100%;
+  }
+  .mainHeader2{
+    width: 100%;
+  }
+  .calendar-card{
+   width : 100%;
+  }
+  .calendar-grid{
+    width : 100%;
+    justify-content:center;
+   }
+   .dayNames{
+    width : 100%;
+   }
+   .calendar-day{
+    height: 35px;
+
+   }
+   .greenCalendarSquare{
+    height: 35px;
+
+   }
+   .modal{
+    width: 90%;
+    justify-content: center;
+    height: 325px;
+
+   }
+   .singleDayContainer{
+    width: 250px;
+    justify-content: center;
+    border: white;
+   }
+   
+   .singleDayHeader{
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+   }
+
+   .login-register-container {
+    width: auto;
+
+   }
+    .workoutExercisesCard {
+    width: 350px;
+    margin-left: -50px;
+    margin-top: 30px;
+
+   }
+   .recipe{
+    width: 350px;
+    margin-left: -65px;
+    margin-top: 30px;
+
+   }
+
+   
+
+
+}
+.mainHeader {
+text-align: left;
+}
+
+.mainHeader2 {
+  text-align: center;
+  justify-content: center;
+  margin: 0 auto; 
+  
+}
+
+.singleDayContainer {
+  border: solid;
+  /* width: 600px; */
+  margin: 0 auto;
+}
+
+.login-register-container{
+  margin-top: 50px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.selfCareButton {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 10px;
+}
+
+.foodButton {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 10px;
+}
+
+
+#selfCareCard {
+  height: 400px;
+}
+
+
